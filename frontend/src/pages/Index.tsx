@@ -15,6 +15,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
+import { PatternText } from "@/components/ui/pattern-text";
 import { toast } from "@/components/ui/sonner";
 import { getApiErrorMessage, login, register } from "@/lib/api";
 import { getAuthToken, setAuthSession } from "@/lib/demo-auth";
@@ -160,13 +161,16 @@ const Index = () => {
               </header>
 
               <div className="mt-10">
-                <h1
-                  className="text-pretty text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl"
+                <PatternText
+                  text="Expert clinical documentation, guided by AI."
+                  className="text-pretty text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl text-foreground"
                   style={{ fontFamily: "var(--font-display)" }}
-                >
-                  Expert clinical documentation,
-                  <span className="text-primary"> guided by AI</span>.
-                </h1>
+                />
+                <div className="mt-2">
+                  <Button variant="link" size="sm" onClick={() => navigate("/pattern-demo")} className="p-0 h-auto text-xs text-muted-foreground hover:text-primary">
+                    View full AI pattern animation demo →
+                  </Button>
+                </div>
                 <p className="mt-4 max-w-xl text-pretty text-base text-muted-foreground">
                   A secure workspace for clinicians to draft, review, and finalize structured notes faster, with fewer
                   omissions.

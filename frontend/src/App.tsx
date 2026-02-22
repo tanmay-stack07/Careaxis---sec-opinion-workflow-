@@ -10,6 +10,7 @@ import Consultation from "./pages/Consultation";
 import Patients from "./pages/Patients";
 import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
+import PatternDemo from "./pages/PatternDemo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -62,6 +63,7 @@ const App = () => (
               </RequireAuth>
             }
           />
+          <Route path="/pattern-demo" element={<PatternDemo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
