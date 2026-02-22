@@ -20,6 +20,7 @@ origins = [
     "http://localhost:8081",
     "http://127.0.0.1:8081",
     "https://careaxis-sec-opinion-workflow.vercel.app",
+    "https://careaxis-sec-opinion-workflow-amkw.vercel.app",
 ]
 
 app.add_middleware(
