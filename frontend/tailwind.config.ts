@@ -132,6 +132,9 @@ export default {
 				},
 				shadanim: {
 					'0%': {
+						backgroundPosition: '0% 0%'
+					},
+					'100%': {
 						backgroundPosition: '100% -100%'
 					}
 				}

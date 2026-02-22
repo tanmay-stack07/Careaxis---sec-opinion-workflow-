@@ -10,11 +10,12 @@ export function PatternText({
         <p
             data-shadow={text}
             className={cn(
-                'relative inline-block text-[2rem] md:text-[4rem] lg:text-[6rem] font-bold leading-tight',
-                '[text-shadow:0.02em_0.02em_0_hsl(var(--background))]',
-                'after:absolute after:top-1 after:left-1 after:-z-1 after:content-[attr(data-shadow)]',
-                'after:bg-[length:0.05em_0.05em] after:bg-clip-text after:text-transparent after:text-shadow-none',
-                'after:bg-[linear-gradient(45deg,transparent_45%,hsl(var(--foreground))_45%,hsl(var(--foreground))_55%,transparent_0)]',
+                'relative inline-block text-[2rem] md:text-[4.5rem] lg:text-[6rem] font-bold leading-[1.05] tracking-tight',
+                'text-foreground',
+                '[text-shadow:0.03em_0.03em_0_hsl(var(--background))]',
+                'after:absolute after:top-[0.03em] after:left-[0.03em] after:-z-1 after:content-[attr(data-shadow)]',
+                'after:bg-[length:0.06em_0.06em] after:bg-clip-text after:text-transparent after:text-shadow-none',
+                'after:bg-[linear-gradient(45deg,transparent:45%,hsl(var(--primary))_45%,hsl(var(--primary))_55%,transparent_0)]',
                 'after:animate-shadanim',
                 className,
             )}
